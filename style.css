@@ -86,12 +86,64 @@ img{
     display: flex;
 }
 
+/* TESTIMONIALS*/
+
+.reviewsheadline{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial{
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    text-align: center;
+    display: flex;
+}
+.testimonial img{
+    margin-right: 20px;
+    display: flex;
+    justify-items: ;
+}
+.testimoniallist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimoniallist li{
+    padding-top: 5px;
+}
+.testblurb{
+    font-size: 10pt;
+}
+.testimonial::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.testimonial p{
+    font-size: 8pt;
+    display: flex;
+    align-items: center;
+}
+.testimonial span{
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+}
+
 /*TECH TABLE*/
 
 table, th, td{
-    border: 2px solid black;
     border-collapse: collapse;
-    padding: 2px;
+    padding: 5px;
+}
+th{
+    border-bottom: 2px solid black;
 }
 table{
     width: 100%;
@@ -105,13 +157,41 @@ table{
 }
 
 /*PROJECTS*/
-.projects-head{
+.projectsbody{
+    display: flex;
+}
+.projhead{
+    display: flex;
+    justify-content: center;
     padding: 10px;
+}
+.projblurb{
+    padding: 25px;
 }
 #unityicon{
     width:50px;
     border-radius: 0%;
     border: none;
+}
+.tooltip1{
+    position: relative;
+}
+.tooltip1text{
+    visibility: hidden;
+    width: 320px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltip1:hover .tooltip1text {
+    visibility: visible;
 }
 
 /*MUSIC PAGE*/
@@ -156,4 +236,8 @@ table{
 .bandlink{
     text-decoration: none;
     color: white;
+}
+
+.albumlist{
+    list-style: none;
 }
