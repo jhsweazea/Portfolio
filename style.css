@@ -7,7 +7,7 @@
 /*NAVBAR*/
 .navbar{
     display: flex;
-    background-color:midnightblue;
+    background-color:rgb(10, 10, 95);
     border-bottom: 2px solid black;
     gap: 20px;
     width: 100vw;
